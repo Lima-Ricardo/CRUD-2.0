@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/pages/delete.css">
+</head>
+<body>
+    
+    {% include 'header.html' %}
+
+    {% if sucesso %}
+        <!-- HTML de sucesso na remoção do filme (segunda rota) -->
+        <div class="bloco removido_sucesso">
+            <p>Album removido com sucesso</p>
+        </div>
+
+        <div class="bloco">
+            <a href="/read" class="botao">Visualizar todos os registros</a>
+        </div>
+
+    {% elif artista %}
+        <!-- HTML de CONFIRMAÇÃO (primeira rota) -->
+        <div class="bloco">
+            <h2>Remover Registro</h2>
+        </div>
+
+        <div class="bloco">
+            <p>Tem certeza que deseja remover o album <span class="highlight">{{artista.nome}}</span> ?</p>
+        </div>
+
+        <div class="bloco">
+            <a href="/delete/{{artista.id}}/confirmed" class="botao">Remover</a>
+            <a href="/read" class="botao">Cancelar</a>
+        </div>
+
+    {% else %}
+        
+        <div class="bloco">
+            <h2>Remover Album</h2>
+        </div>
+
+        <div class="bloco">
+            <p>Nenhum título foi encontrado.</p>
+        </div>
+
+        <div class="bloco">
+            <a href="/read" class="botao">Voltar para a lista de álbuns</a>
+        </div>
+
+    {% endif %}
+
+</body>
+</html>

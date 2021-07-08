@@ -1,0 +1,343 @@
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Spockfy</title>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../static/pages/new.css">
+	<script src="../static/konami.js" type="text/javascript"></script>
+</head>
+<body>
+	<div class="sidebar">
+		<div class="sidebar-wraper">
+			<div class="sidebar__logo">
+				<img src="../static/img/logo.png" />
+			</div><!--sidebar--logo-->
+
+			<div class="sidebar__menu">
+				<a class="sidebar__menu__selecionado" href="#"><i class="fas fa-home"></i> Início</a>
+				<a href="#"><i class="fas fa-search"></i> Buscar</a>
+				<a href="#"><i class="fas fa-database"></i> Biblioteca</a>
+			</div><!--sidebar-menu-->
+
+			<div class="sidebar__menu">
+				<p class="sidebar__menu__title">Playlists</p>
+
+				<div class="sidebar__menu__item">
+					<div class="sidebar__menu__item__componente">
+						<span>+</span>
+					</div>
+					<span>Criar Playlist</span>
+				</div><!--sidebar-menu-item-->
+
+				<div class="sidebar__menu__item">
+					<img src="../static/img/like.gif" />
+					<span>Músicas Curtidas</span>
+				</div><!--sidebar-menu-item-->
+			</div><!--sidebar--menu-->
+
+			<div class="sidebar__playlists">
+				<a href="">Playlist 1</a>
+				<a href="">Playlist 2</a>
+				<a href="">Playlist 3</a>
+				<a href="">Playlist 4</a>
+				<a href="">Playlist 5</a>
+			</div><!--sidebar-playlists-->
+
+			<div class="sidebar__playlists">
+				<a href="">Playlist 6</a>
+				<a href="">Playlist 7</a>
+				<a href="">Playlist 8</a>
+				<a href="">Playlist 9</a>
+				<a href="">Playlist 10</a>
+			</div><!--sidebar-playlists-->
+
+			<table>
+				<div id="marca">
+					<img src="../static/img/Aires.png" alt="" srcset="">
+					
+				</div>
+			</table>
+
+		</div><!--sidebar-wraper-->
+
+	</div><!--sidebar-->
+
+	<div class="main">
+		<div class="main-wraper">
+
+			<div class="main__row">
+				<div class="main__row__title"><h2>Paradas</h2></div>
+
+				<div class="main__col">
+					<img src="../static/img/top50.png" />
+					<h3>As 50 mais tocadas</h3>
+					<p>Aqui vai a descrição da minha música...</p>
+				</div><!--main__col-->
+
+				<div class="main__col">
+					<img src="../static/img/top50global.png" />
+					<h3>As 50 mais tocadas</h3>
+					<p>Aqui vai a descrição da minha música...</p>
+				</div><!--main__col-->
+
+				<div class="main__col">
+					<img src="../static/img/classic.png" />
+					<h3>Classic</h3>
+					<p>Aqui vai a descrição da minha música...</p>
+				</div><!--main__col-->
+
+				<div class="main__col">
+					<img src="../static/img/blue.png" />
+					<h3>Musicas da Blue</h3>
+					<p>Aqui vai a descrição da minha música...</p>
+				</div><!--main__col-->
+
+				<div class="main__col">
+					<img src="../static/img/musicas.png" />
+					<h3>Musicas</h3>
+					<p>Aqui vai a descrição da minha música...</p>
+				</div><!--main__col-->
+
+				<div class="main__col">
+					<img src="../static/img/tophits.png" />
+					<h3>Top Hits</h3>
+					<p>Aqui vai a descrição da minha música...</p>
+				</div><!--main__col-->
+
+				<div class="main__col">
+					<img src="../static/img/radiohits.png" />
+					<h3>Radio Hits</h3>
+					<p>Aqui vai a descrição da minha música...</p>
+				</div><!--main__col-->
+
+				<div class="main__col">
+					<img src="../static/img/worldhits.png" />
+					<h3>World Hits</h3>
+					<p>Aqui vai a descrição da minha música...</p>
+				</div><!--main__col-->
+
+			</div><!--main_row-->
+
+			<div class="main__row">
+				<div class="main__row__title"><h2>Minhas músicas</h2></div>
+
+
+				<div class="main__col" data-image="../static/img/doors.png" data-artist="The Doors" data-song="Roadhouse Blues" data-file="../static/assets/doors.mp4">
+					<img src="../static/img/doors.png" />
+					<h3>The Doors</h3>
+					<p>Roadhouse Blues</p>
+				</div><!--main__col-->
+				
+				<div class="main__col" data-image="../static/img/uptown.png" data-artist="Bruno Mars" data-song="Uptown Funk" data-file="../static/assets/uptown.mp4">
+					<img src="../static/img/uptown.png" />
+					<h3>Buno Mars</h3>
+					<p>Uptown Funk</p>
+				</div><!--main__col-->
+
+				<div class="main__col" data-image="../static/img/daft.png" data-artist="Daft Punk" data-song="Get Lucky" data-file="../static/assets/daft.mp4">
+					<img src="../static/img/daft.png" />
+					<h3>Daft Punk</h3>
+					<p>Get Lucky</p>
+				</div><!--main__col-->
+
+				
+				<div class="main__col" data-image="../static/img/daryl.png" data-artist="Daryl Hall & John Oates" data-song="I Can't Go For That" data-file="../static/assets/daryl.mp4">
+					<img src="../static/img/daryl.png" />
+					<h3>Daryl Hall & John Oates</h3>
+					<p>I Can't Go For That </p>
+				</div><!--main__col-->
+
+				<div class="main__col" data-image="../static/img/earth.png" data-artist="Earth, Wind & Fire" data-song="Let's Groove" data-file="../static/assets/let.mp4">
+					<img src="../static/img/earth.png" />
+					<h3>Earth, Wind & Fire</h3>
+					<p> Let's Groove</p>
+				</div><!--main__col-->
+
+				<div class="main__col" data-image="../static/img/sep.png" data-artist="Earth, Wind & Fire" data-song="I Can't Go For That" data-file="../static/assets/september.mp4">
+					<img src="../static/img/sep.png" />
+					<h3>Earth, Wind & Fire</h3>
+					<p>September</p>
+				</div><!--main__col-->
+
+
+				<h1>
+					<span
+					   class="txt-rotate flash"
+					   data-period="2000"
+					   data-rotate='[]'></span>
+				</h1>
+				  <img class='toasty' src='https://s3-eu-west-1.amazonaws.com/wdildnproject2/toasty.png'>
+				  <img class='toasty' src="../static/img/vibing-cat.gif" alt="">
+				  
+			</div><!--main_row-->
+
+		</div><!--main-wraper-->
+
+	</div>
+
+
+	<div class="player">
+		<div class="player__artist">
+
+		</div>
+		<div class="player__control">
+			<div class="player__control__buttons">
+				<a href=""><i class="fas fa-backward"></i></a>
+				<a style="display: none;" id="pauseBtn" href="#"><i class="far fa-pause-circle"></i></a>
+				<a id="playBtn" href="#"><i class="far fa-play-circle"></i></a>
+				<a href=""><i class="fas fa-forward"></i></a>
+			</div>
+
+			<div class="player__control__progress">
+				<div style="width:0%;" class="player__control__progress_2"></div>
+			</div>
+
+		</div>
+	</div><!--player-->
+
+	<audio id="audioplayer" style="position: absolute;left: 0;
+	top: 0;z-index: -999;opacity: 0;" controls="">
+		
+	</audio>
+
+
+
+
+
+	<script src="../static/all.min.js"></script>
+
+	<script>
+
+			var audioPlayer = document.getElementById('audioplayer');
+			var loaded = false;
+
+			var playBtn = document.getElementById('playBtn');
+			var pauseBtn = document.getElementById('pauseBtn');
+
+			pauseBtn.addEventListener('click',(e)=>{
+				e.preventDefault();
+
+				playBtn.style.display = "inline";
+				pauseBtn.style.display = "none";
+				audioPlayer.pause();
+				return false;
+			});
+
+
+			playBtn.addEventListener('click',(e)=>{
+				e.preventDefault();
+
+				playBtn.style.display = "none";
+				pauseBtn.style.display = "inline";
+				audioPlayer.play();
+				return false;
+			});
+
+			const playSong = (file) => {
+
+
+					if(loaded == false){
+						audioPlayer.innerHTML = `<source src="`+file+`" type="audio/mp3" />`;
+						loaded = true;
+					}
+
+					audioPlayer.load();
+
+
+
+					playBtn.style.display = "none";
+					pauseBtn.style.display = "inline";
+
+			}
+
+			document.querySelectorAll('.main__col').forEach(item =>{
+
+				item.addEventListener('click',event=>{
+					let image = item.getAttribute('data-image');
+					let artist = item.getAttribute('data-artist');
+					let song = item.getAttribute('data-song');
+					let file = item.getAttribute('data-file');
+
+
+					let playerArtistComponent = document.getElementsByClassName('player__artist');
+
+					playerArtistComponent[0].innerHTML = `
+						<img src="`+image+`" />
+						<h3>`+artist+`<br/><span>`+song+`</span></h3>
+
+					`;
+
+					playSong(file);
+				})
+
+			});
+
+
+			//Utilizar setinterval a cada segundo e atualizar a barra de progresso.
+
+			audioPlayer.onloadstart = ()=>{
+				alert('começou carregar.');
+			}
+
+			audioPlayer.oncanplaythrough = function() {
+    			alert("Can start playing video");
+    			audioPlayer.play();
+    			alert(audioPlayer.duration);
+			};
+
+			//audioPlayer.play = function(){
+				//alert('começou');
+			//}
+
+			audioPlayer.addEventListener('timeupdate',(e)=>{
+				var currentTime = audioPlayer.currentTime;
+				console.log(currentTime);
+ 		
+			});
+			//(segundo atual / segundo total) * 100
+
+
+	</script>
+
+	<!-- <script>
+		
+		const codigoSecreto = 'cat';
+		let temporizador;
+		let sequenciaDeCaracteres = [];
+
+		// 1 - Sequencia de caracteres
+		window.addEventListener('keydown', function(evento) {
+			clearTimeout(temporizador);
+			const teclaPressionada = evento.key;
+			
+			sequenciaDeCaracteres.push(teclaPressionada);
+			
+			const fraseComCaracteres = sequenciaDeCaracteres.join('');
+			
+			if(fraseComCaracteres.includes(codigoSecreto)) {
+				console.log('Você ACERTOU a sequencia!!!')
+				document.querySelector('#winScreen').dataset.status = 'active'
+				sequenciaDeCaracteres = [];
+			}
+			
+			console.log(sequenciaDeCaracteres);
+			temporizador = setTimeout(function() {
+				sequenciaDeCaracteres = [];		
+			}, 1000);
+
+		}) -->
+
+	</script>
+
+
+
+
+</body>
+</html>
